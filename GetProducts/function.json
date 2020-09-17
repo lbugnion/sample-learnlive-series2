@@ -1,0 +1,29 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "products"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputProducts",
+      "databaseName": "maindb",
+      "collectionName": "data",
+      "connectionStringSetting": "dbbacktoschool5608_DOCUMENTDB",
+      "partitionKey": "product"
+    }
+  ],
+  "scriptFile": "../dist/GetProducts/index.js"
+}

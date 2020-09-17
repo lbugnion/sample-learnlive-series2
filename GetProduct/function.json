@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get"
+      ],
+      "route": "product/{productId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "in",
+      "name": "inputProduct",
+      "databaseName": "maindb",
+      "collectionName": "data",
+      "connectionStringSetting": "dbbacktoschool5608_DOCUMENTDB",
+      "id": "{productId}",
+      "partitionKey": "product"
+    }
+  ],
+  "scriptFile": "../dist/GetProduct/index.js"
+}

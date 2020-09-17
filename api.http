@@ -1,0 +1,40 @@
+### GET GetProduct (1)
+
+http://localhost:7071/api/product/p001
+
+### POST GetProduct (1)
+
+POST http://localhost:7071/api/product/1234
+
+{
+}
+
+### CreateProduct
+
+POST http://localhost:7071/api/product
+Content-Type: application/json
+
+{
+    "id": "p099",
+    "itemType": "product",
+    "name": "Hello world",
+    "description": "This is Learn Live",
+    "price": 999,
+    "category": "Writing",
+    "stockUnits": 100,
+    "thumbnailImage": "p001.png"
+}
+
+### UpdateProduct
+
+PUT http://localhost:7071/api/product/p099
+Content-Type: application/json
+
+{
+    "description": "This is Learn Live again",
+    "price": 1001
+}
+
+### GET GetProducts
+
+http://localhost:7071/api/products

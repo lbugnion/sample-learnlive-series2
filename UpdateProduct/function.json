@@ -1,0 +1,30 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "put"
+      ],
+      "route": "product/{productId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "cosmosDB",
+      "direction": "out",
+      "name": "outputProduct",
+      "databaseName": "maindb",
+      "collectionName": "data",
+      "createIfNotExists": "false",
+      "connectionStringSetting": "dbbacktoschool5608_DOCUMENTDB",
+      "partitionKey": "product"
+    }
+  ],
+  "scriptFile": "../dist/UpdateProduct/index.js"
+}

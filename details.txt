@@ -1,0 +1,6 @@
+Cosmos DB instance name: dbbacktoschool9038
+Cosmos DB master key: WXyl4WPO7yqCVEdBKg65AwD8W0GnYBe2wv1vuKG8akSCmCiJalEsG2oCa6YRsEFUDehSwoC5OlxCtWpBHmbXQA==
+Connection string: AccountEndpoint=https://dbbacktoschool9038.documents.azure.com:443/;AccountKey=WXyl4WPO7yqCVEdBKg65AwD8W0GnYBe2wv1vuKG8akSCmCiJalEsG2oCa6YRsEFUDehSwoC5OlxCtWpBHmbXQA==;
+
+databaseName="dbbacktoschool9038"
+masterKey="WXyl4WPO7yqCVEdBKg65AwD8W0GnYBe2wv1vuKG8akSCmCiJalEsG2oCa6YRsEFUDehSwoC5OlxCtWpBHmbXQA=="
