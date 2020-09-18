@@ -38,3 +38,7 @@ Content-Type: application/json
 ### GET GetProducts
 
 http://localhost:7071/api/products
+
+### GET GetProducts Local
+
+https://lblearnlive.azurewebsites.net/api/products
